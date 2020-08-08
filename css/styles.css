@@ -1,0 +1,267 @@
+#index-body{
+    background-image: url(../imagens/thumbs/bg-3.jpg);
+    background-position: 75% 20%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;*/
+    background-size: cover;
+    font-family: sans-serif;
+}
+.index-main-div{
+    transition: 1s;
+    font-weight: 1.5;
+    border-radius: 15px;
+}
+.index-main-div:hover{
+    background-color: #222;
+}
+.index-main-h1{
+    text-align: center;
+    color: white;
+}
+.index-nav-ul-li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+.index-nav-ul-li a{
+    background-color: #444;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.4s linear;
+    border: 1px solid white; 
+}
+
+.index-nav-ul-li a:hover{
+    background-color: #222;
+}
+
+.nav-link{
+    border: 0px;
+}
+/*index*/
+
+
+/*quemSou*/
+#quemSou-body{
+    font-family: sans-serif;
+    background-color: #444
+}
+
+.quemSou-header-section {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 2px 2px 3px #111;
+}
+
+.quemSou-header-section h1{
+    text-transform: uppercase;    
+}
+
+.quemSou-header-section p{ 
+    font-size: 16px;
+    transition: 1s;
+    font-weight: 1.5;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.quemSou-header-section p:hover{ 
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+.quemSou-header-banner{
+    background-image: url(../imagens/thumbs/bg-5.jpg);
+    background-position: 75% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+    background-color: #555;
+}
+
+.quemSou-header-banner:hover{
+    background-color: rgba(0, 0, 0, 0.600);
+}
+
+.quemSou-ul-li{
+    list-style: none;
+}
+
+.quemSou-ul-li a{
+    background-color: #444;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.4s linear;
+    border: 1px solid white; 
+    text-align: center;
+}
+
+.quemSou-ul-li a:hover{
+    background-color: #222;
+}
+
+.quemSou-div-experiencias{
+    background-color: #444;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.quemSou-div-experiencias h2{
+    margin-top: 8px;
+    color: white;
+    text-transform: uppercase;
+}
+.quemSou-section-experiencias {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #333;
+    
+}
+.quemSou-div-experiencias-slide{
+    padding: 0px 50px;
+    background-color: #333;
+    color: white;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    position: relative;
+    box-sizing: border-box;
+}
+.quemSou-div-experiencias-slide div{
+    padding: 10px 10%;
+    margin-top: 10px;
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 50px;
+    right: 50px;
+}
+
+.quemSou-div-experiencias-slide h4{
+    margin-top: 0px;
+}
+
+.quemSou-div-experiencias-slide div.show{
+    opacity: 1;
+    position: static;
+    transition: opacity 2s;
+}
+.quemSou-div-experiencias-slide .prev{
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+}
+.quemSou-div-experiencias-slide .next {
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+}
+.quemSou-div-experiencias-slide .prev {
+    transition: 1s;
+    left: 5px;
+    opacity: 0.4;
+}
+.quemSou-div-experiencias-slide .next {
+    transition: 1s;
+    right: 5px;
+    opacity: 0.4;
+}
+.quemSou-div-experiencias-slide .prev:hover{
+    opacity: 1;
+}
+.quemSou-div-experiencias-slide .next:hover{
+    opacity: 1;
+}
+
+.quemSou-div-formacao-complementar{
+    background-color: #444;
+    border-bottom: 1px solid black;
+    text-align: center;
+    color:white;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+.quemSou-section-formacao-complementar{
+    color:white;
+    text-align: center;
+    background-color: #444;
+}
+
+.quemSou-section-formacao-complementar h4{
+    padding-top: 10px;
+    
+}
+
+.quemSou-section-formacao-complementar div {
+    background-color: #333;
+    color: white;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+}
+
+.quemSou-ul-formacao-complementar{
+    list-style: none;
+    margin-top: 8px;
+    padding-left: 0px;
+}
+
+.quemSou-ul-formacao-complementar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.quemSou-section-contato{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    background-color: #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid black;
+    border-bottom: 10px solid #222;
+}
+.quemSou-section-contato img {
+    width: 8%;
+}
+
+.quemSou-section-contato h5{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.quemsou-ul-contato{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.quemsou-ul-contato a{
+    color:white;
+    text-decoration: none;
+}
+.fa-linkedin{
+    color: #2867B2;
+}
+.fa-github{
+    color: #000;
+}
+
+.fa-whatsapp{
+    color: #25D366;
+}
