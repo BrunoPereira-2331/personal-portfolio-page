@@ -1,50 +1,60 @@
-function Carousel(config){
-    this.container = document.querySelector(config.container)
-    
-    this.itens = this.container.querySelectorAll(config.itens)
-    
-    this.btnPrev = this.container.querySelector(config.btnPrev)
+function Carousel(config) {
+    const container = document.querySelector(config.container)
 
-    this.btnNext = this.container.querySelector(config.btnNext)
-    
-    var _this = this;
+    const itens = document.querySelectorAll(config.itens)
 
-    var _currentSlide = 0
-    
+    const btnPrev = document.querySelector(config.btnPrev)
+
+    const btnNext = document.querySelector(config.btnNext)
+
+    let _this = this;
+
+    let _currentSlide = 0
+
     init()
-    function init(){
-        var _show = _this.container.querySelectorAll('.show')
-        
-        Array.prototype.forEach.call(_show, function(sh){
+    function init() {
+        let _show = container.querySelectorAll('.show')
+
+        // Array.prototype.forEach.call(_show, function(sh){
+        //     sh.classList.remove('show')
+        // })
+
+        Array.prototype.forEach.call(_show, (sh) => {
             sh.classList.remove('show')
+            sh.classList.add('show-none')
         })
-        _this.itens[0].classList.add('show')
-        _this.btnNext.removeAttribute('style')
-        _this.btnPrev.removeAttribute('style')
-        addListeners()        
+        
+        itens[0].classList.remove('show-none')
+        itens[0].classList.add('show')
+        /* _this.btnNext.removeAttribute('style')
+        _this.btnPrev.removeAttribute('style') */
+        addListeners()
     }
-    
-    function addListeners(){
-        _this.btnNext.addEventListener('click', showNextSlide)
-        _this.btnPrev.addEventListener('click', showPrevSlide)
+
+    function addListeners() {
+        btnNext.addEventListener('click', showNextSlide)
+        btnPrev.addEventListener('click', showPrevSlide)
     }
-    
-    function showNextSlide(){
+
+    function showNextSlide() {
         _currentSlide++;
         showSlide();
     }
-    
-    function showPrevSlide(){
+
+    function showPrevSlide() {
         _currentSlide--;
         showSlide()
     }
 
-    function showSlide(){
-        var qtd = _this.itens.length;
-        var slide = _currentSlide % qtd;
+    function showSlide() {
+        let qtd = itens.length;
+        let slide = _currentSlide % qtd;
+        console.log(`qtd ${qtd}`, `slide ${slide}`, )
         slide = Math.abs(slide);
-        _this.container.querySelector('.show').classList.remove('show');
-        _this.itens[slide].classList.add('show')
-        
+        container.querySelector('.show').classList.add('show-none');
+        container.querySelector('.show').classList.remove('show');
+        itens[slide].classList.remove('show-none')
+        itens[slide].classList.add('show')
+
     }
 }

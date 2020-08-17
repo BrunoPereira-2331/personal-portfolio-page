@@ -1,12 +1,12 @@
 (function () {
-    let carouselProjetos = new Carousel({
-        container: '.quemSou-div-experiencias-slide',
-        itens: '.quemSou-div-experiencias-slide div',
-        btnPrev: '.prev',
-        btnNext: '.next'
+    const carouselProjetos = new Carousel({
+        container: '[experiencias-div-slide]',
+        itens: '[experiencias-div-slide] > div',
+        btnPrev: '.experiencias-btn-left',
+        btnNext: '.experiencias-btn-right'
     })
 
-    window.onload = function () {
+    /* window.onload = function () {
         changeImageSize()
-    }
+    } */
 })()
