@@ -1,11 +1,12 @@
 (function () {
-    const carouselProjetos = new Carousel({
+    const carouselExperiencias = new Carousel({
         container: '[experiencias-div-slide]',
-        itens: '[experiencias-div-slide] > div',
+        items: '[experiencias-div-slide] > div',
         btnPrev: '.experiencias-btn-left',
         btnNext: '.experiencias-btn-right'
     })
 
+    hideMenu()
     /* window.onload = function () {
         changeImageSize()
     } */
