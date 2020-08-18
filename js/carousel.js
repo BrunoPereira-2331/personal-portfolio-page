@@ -14,11 +14,6 @@ function Carousel(config) {
     init()
     function init() {
         let _show = container.querySelectorAll('.show')
-
-        // Array.prototype.forEach.call(_show, function(sh){
-        //     sh.classList.remove('show')
-        // })
-
         Array.prototype.forEach.call(_show, (sh) => {
             sh.classList.remove('show')
             sh.classList.add('show-none')
@@ -26,8 +21,6 @@ function Carousel(config) {
         
         items[0].classList.remove('show-none')
         items[0].classList.add('show')
-        /* _this.btnNext.removeAttribute('style')
-        _this.btnPrev.removeAttribute('style') */
         addListeners()
     }
 
@@ -49,7 +42,6 @@ function Carousel(config) {
     function showSlide() {
         let qtd = items.length;
         let slide = _currentSlide % qtd;
-        console.log(`qtd ${qtd}`, `slide ${slide}`, )
         slide = Math.abs(slide);
         container.querySelector('.show').classList.add('show-none');
         container.querySelector('.show').classList.remove('show');

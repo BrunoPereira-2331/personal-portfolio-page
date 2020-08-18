@@ -161,13 +161,6 @@
     }
 }
 
- /* and (min-width:) */ 
-/* @media(max-width: 705px){
-    [header-ul] li{
-        font-size: 0.6em;
-    }
-} */
-
 [header-ul] {
     display: flex;
     flex-direction: row;
@@ -230,10 +223,9 @@
         padding: 10px;
         background-color: rgba(37, 37, 37, 0.9);
     }
-    
 }
 
-@media(max-width: 350px) {
+@media(max-width: 450px) {
     .header-section{
         box-sizing: content-box;
         width: 80%;
@@ -241,7 +233,31 @@
         margin-left: auto;
         margin-right: auto;
     }
-}
+
+    .experiencias-section .experiencias-h2 {
+        font-size: 23px;
+    }
+
+    .formacao-complementar-section .formacao-complementar-h3 {
+        width: 80%;
+    }
+
+    .formacao-complementar-section [formacao-complementar-div] {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .header-hide-menu [header-ul-hide-menu] li {
+        font-size: 16px;
+    }
+    
+    .header-hide-menu [header-ul-hide-menu] a {
+        font-size: 16px;
+    }
+
+    .header-hide-menu {
+        width: 80%;
+    }
 
 .experiencias-section{
     display: flex;
@@ -255,7 +271,7 @@
     text-align: center;
     background-color: rgb(37, 37, 37);
     padding: 20px 15px;
-    border-radius: 100px 100px 0 0;
+    border-radius: 50px 50px 0 0;
     border: 1px solid rgb(22, 22, 22);;
 }
 
@@ -305,9 +321,6 @@
     grid-area: slide-content;
 }
 
-[experiencias-div-slide] h3 {
-}
-
 [experiencias-div-slide] h4, p{
     padding: 5px 0;
 }
@@ -335,7 +348,6 @@
     display: flex;
     flex-flow: column;
     text-align: center;
-    
 }
 
 .formacao-complementar-section div {
@@ -350,7 +362,7 @@
 
 .formacao-complementar-section h3 {
     font-size: 22px;
-    width: 50%;
+    width: 60%;
     margin: 10px auto;
     margin-top: 10px;
     text-align: center;
