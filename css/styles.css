@@ -40,6 +40,7 @@
 
 .header-div h1{
     text-shadow: 2px 2px 3px #111;
+    font-size: 35px;
 }
 
 .header-nav-menu{
@@ -63,7 +64,6 @@
     margin: 0 auto;
     padding: 20px;
     padding-top: 5px;
-    /* background-color: rgb(56, 56, 56); */
     width: 50%;
 }
 
@@ -71,7 +71,7 @@
     margin: 0 auto;
     text-align: center;
     padding: 5px 0 5px 0;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(243, 243, 243);
     width: 40px;
     cursor: pointer;
     position: relative;
@@ -107,7 +107,7 @@
 }
 
 .fa-bars {
-    color: white;
+    color: black;
     width: 100%;
     font-size: 25px;
 }
@@ -218,7 +218,8 @@
     .header-section{
         width: 80%;
         padding: 0;
-        margin: 0 auto;
+        margin: 20px auto;
+        margin-bottom: 0;
     }
 
     .header-section h1{
@@ -324,6 +325,10 @@
 
 .show-none {
     opacity: 0;
+}
+
+.under {
+    z-index: -1;
 }
 
 .formacao-complementar-section {

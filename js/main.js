@@ -7,7 +7,4 @@
     })
 
     hideMenu()
-    /* window.onload = function () {
-        changeImageSize()
-    } */
 })()

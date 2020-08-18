@@ -19,13 +19,13 @@ function hideMenu() {
         return true
     }
 
-    const displayHideMenu = () => {
+    const getDisplayHideMenu = () => {
         return document.querySelector('.header-items-hide-menu').style.display
     }
 
     buttonMenu.addEventListener('click', () => {
         activeMenu(this.displayMenu)
-        this.displayMenu = displayHideMenu()
+        this.displayMenu = getDisplayHideMenu()
     })
 
 }
