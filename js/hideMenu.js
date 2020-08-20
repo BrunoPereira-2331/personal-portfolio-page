@@ -3,15 +3,13 @@ function hideMenu() {
     const buttonMenu = document.querySelector('.header-button-hide-menu')
     let displayMenu = menuItems.style.display
 
-    const activeMenu = (displayMenu) => {
-        if (isMenuActive(displayMenu)) {
-            menuItems.style.display = 'none'
-        }
-        else {
-            menuItems.style.display = 'block'
-        }
+    const activeMenu = () => {
+        menuItems.style.display = 'block'
     }
 
+    const hideMenu = () => {
+        menuItems.style.display = 'none'
+    }
     const isMenuActive = (displayMenu) => {
         if (displayMenu === 'none' || displayMenu === undefined) {
             return false
@@ -19,13 +17,13 @@ function hideMenu() {
         return true
     }
 
-    const getDisplayHideMenu = () => {
+    const getDisplayMenu = () => {
         return document.querySelector('.header-items-hide-menu').style.display
     }
 
     buttonMenu.addEventListener('click', () => {
-        activeMenu(this.displayMenu)
-        this.displayMenu = getDisplayHideMenu()
+        isMenuActive(this.displayMenu) ? hideMenu() : activeMenu()
+        this.displayMenu = getDisplayMenu()
     })
 
 }
