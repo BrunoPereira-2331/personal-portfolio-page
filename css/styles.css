@@ -87,7 +87,13 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    display: none;
+    transition: transform 2s linear;
+    transform: translateY(-200vw)
+}
+
+.header-items-hide-menu.show {
+    transition: transform .5s linear;
+    transform: translateY(0vh)
 }
 
 [header-ul-hide-menu] {
