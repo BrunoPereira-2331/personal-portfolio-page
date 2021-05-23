@@ -404,3 +404,8 @@
 .fa-whatsapp{
     color: #25D366;
 }
+
+.no-style-link {
+  text-decoration: none;
+  color: white;
+}
