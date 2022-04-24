@@ -9,6 +9,7 @@
     <meta name="keywords" content="Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="../fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
     <script src="./js/jquery-3.6.0.min.js"></script>
 
@@ -21,89 +22,63 @@
         .current-company-name:hover {
             color: rgb(218, 107, 4);
         }
+
+        .header {
+            grid-area: header;
+            height: 100vh;
+            background-image: url("./assets/images/backgrounds/background_01.jpg");
+            background-position: 75% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container-avatar-img {
+            display: flex;
+            justify-content: center;
+        }
+        .container-avatar-header {
+
+        }
+
+        .header-section{
+        }
     </style>
 </head>
 
 <body id="body">
-    <header class="header">
-        <div class="header-hide-menu">
-            <div class="header-button-hide-menu">
-                <i class="fas fa-bars"></i>
+    <header class="header flex-column">
+        <div class="header-container align-self-start">
+            <div>
+                <h1>------ menu imaginario ------</h1>
             </div>
-            <div class="header-items-hide-menu" header-items-div-hide-menu>
-                <ul header-ul-hide-menu>
-                    <li>
-                        <a href="https://www.linkedin.com/in/brunopereira-2331/" target="_blank">
-                            <i class="fab fa-linkedin fa-fw"></i>Linkedin
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/BrunoPereira-2331" target="_blank">
-                            <i class="fab fa-github fa-fw"></i>Github
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:brunopereira.19@hotmail.com">
-                            <i class="fas fa-envelope fa-fw"></i>brunopereira.19@hotmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-mobile-alt fa-fw"></i>(51)999341544
-                    </li>
-                    <li>
-                        <a href="https://wa.me/send?phone=5551999341544" target="_blank">
-                            <i class="fab fa-whatsapp fa-fw"></i>Me envie uma mensagem
-                        </a>
-                    </li>
-                </ul>
+            <div class="flex-column justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <img src="https://avatars.githubusercontent.com/u/55865619?v=4" class="header-avatar-img img-fluid">
+                </div>
+                <h1 class="h1 text-center">Bruno Pereira</h1>
             </div>
         </div>
-        <nav class="header-nav-menu">
-            <ul header-ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/brunopereira-2331/" target="_blank">
-                        <i class="fab fa-linkedin fa-fw"></i>Linkedin
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/BrunoPereira-2331" target="_blank">
-                        <i class="fab fa-github fa-fw"></i>Github
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:brunopereira.19@hotmail.com">
-                        <i class="fas fa-envelope fa-fw"></i>brunopereira.19@hotmail.com
-                    </a>
-                </li>
-                <li>
-                    <i class="fas fa-mobile-alt fa-fw"></i>(51)999341544
-                </li>
-                <li>
-                    <a href="https://wa.me/send?phone=5551999341544" target="_blank">
-                        <i class="fab fa-whatsapp fa-fw"></i>Me envie uma mensagem
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-div">
-            <img src="https://avatars.githubusercontent.com/u/55865619?v=4" id="header-avatar-img" class="header-avatar-img">
-            <h1>Bruno Pereira</h1>
+        <div class="align-self-end">
+            <section class="header-section text-center">
+                <p>Formado em An&aacute;lise e Desenvolvimento de Sistemas e cursando ingl&ecirc;s pela escola
+                    <a href="https://www.bloomingidiomas.com.br/" target="_blank" class="no-style-link">Blooming <i class="fas fa-external-link-alt"></i>
+                    </a><br>
+                    Atualmente estou atuando como Desenvolvedor Full Stack na empresa 
+                    <a href="https://brudam.com.br/" target="_blank" class="no-style-link current-company-name">Brudam 
+                        <i class="fas fa-external-link-alt"></i>
+                    </a><br>
+                    Desenvolvo funcionalidades e aplico corre&ccedil;&otilde;es diariamente no TMS desenvolvido pela Empresa,
+                    utilizando no dia a dia tecnologias como PHP, Eloquent, Phalcon, MySQL, Javascript, Jquery, HTML5 e CSS3.<br>
+                    Tenho conhecimento em tecnologias como Javascript, PHP, Jquery, MySQL, HTML5, CSS3, React, Github.<br>
+                    Possuo conhecimento em ingl&ecirc;s nivel intermediario.
+                </p>
+            </section>
         </div>
-        <section class="header-section">
-            <h1>Quem sou</h1>
-            <p>Formado em An&aacute;lise e Desenvolvimento de Sistemas e cursando ingl&ecirc;s pela escola
-                <a href="https://www.bloomingidiomas.com.br/" target="_blank" class="no-style-link">Blooming <i class="fas fa-external-link-alt"></i>
-                </a>.<br>
-                Atualmente estou atuando como Software Developer na empresa 
-                <a href="https://brudam.com.br/" target="_blank" class="no-style-link current-company-name">Brudam 
-                    <i class="fas fa-external-link-alt"></i>
-                </a><br>
-                Desenvolvo funcionalidades e aplico corre&ccedil;&otilde;es diariamente no TMS desenvolvido pela Empresa,
-                utilizando no dia a dia tecnologias como PHP, Eloquent, Phalcon, MySQL, Javascript, Jquery, HTML5 e CSS3.<br>
-                Tenho conhecimento em tecnologias como Javascript, PHP, Jquery, MySQL, HTML5, CSS3, React, Github.<br>
-                Possuo conhecimento em ingl&ecirc;s nivel intermediario.
-            </p>
-        </section>
     </header>
     <main>
         <section class="experiencias-section">
