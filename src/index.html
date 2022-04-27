@@ -12,11 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="../fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
     <script src="./js/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(function () {
-
-        });
+    <script defer>
+        (function () {
+        })()
     </script>
     <style>
         .current-company-name:hover {
@@ -25,8 +23,12 @@
 
         .header {
             grid-area: header;
+            display: flex;
+            align-items: center;
             height: 100vh;
             background-image: url("./assets/images/backgrounds/background_01.jpg");
+            background-color: rgba(50, 50, 50, 0.7);
+            background-blend-mode: soft-light;
             background-position: 75% 50%;
             background-repeat: no-repeat;
             background-size: cover;
@@ -34,50 +36,103 @@
 
         .header-container {
             display: flex;
+            align-items: center;
+        }
+
+        .header-container-content {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .header-container-avatar {
+            display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         .container-avatar-img {
             display: flex;
             justify-content: center;
         }
-        .container-avatar-header {
 
+        .section-info {
+            width: 90%;
+            border-radius: 25px;
         }
 
-        .header-section{
+        .section-info p {
+            width: 90%;
+            border-radius: 25px;
+            background-color: rgba(37, 37, 37, 0.9);
+        }
+
+        .container-section-info {
+            align-self: center;
+            width: 80%;
         }
     </style>
 </head>
 
 <body id="body">
-    <header class="header flex-column">
-        <div class="header-container align-self-start">
-            <div>
-                <h1>------ menu imaginario ------</h1>
-            </div>
-            <div class="flex-column justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <img src="https://avatars.githubusercontent.com/u/55865619?v=4" class="header-avatar-img img-fluid">
-                </div>
-                <h1 class="h1 text-center">Bruno Pereira</h1>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/BrunoPereira-2331" target="_blank"><i class="fab fa-github mr-1"></i>Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/brunopereira-2331" target="_blank"><i class="fab fa-linkedin mr-1"></i>Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:brunopereira.19@hotmail.com" target="_blank"><i class="fas fa-envelope fa-fw"></i>brunopereira.19@hotmail.com</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="align-self-end">
-            <section class="header-section text-center">
-                <p>Formado em An&aacute;lise e Desenvolvimento de Sistemas e cursando ingl&ecirc;s pela escola
-                    <a href="https://www.bloomingidiomas.com.br/" target="_blank" class="no-style-link">Blooming <i class="fas fa-external-link-alt"></i>
-                    </a><br>
-                    Atualmente estou atuando como Desenvolvedor Full Stack na empresa 
-                    <a href="https://brudam.com.br/" target="_blank" class="no-style-link current-company-name">Brudam 
-                        <i class="fas fa-external-link-alt"></i>
-                    </a><br>
-                    Desenvolvo funcionalidades e aplico corre&ccedil;&otilde;es diariamente no TMS desenvolvido pela Empresa,
-                    utilizando no dia a dia tecnologias como PHP, Eloquent, Phalcon, MySQL, Javascript, Jquery, HTML5 e CSS3.<br>
-                    Tenho conhecimento em tecnologias como Javascript, PHP, Jquery, MySQL, HTML5, CSS3, React, Github.<br>
-                    Possuo conhecimento em ingl&ecirc;s nivel intermediario.
-                </p>
-            </section>
+    </nav>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-container-content">
+                <div class="header-container-avatar">
+                    <div class="flex-column justify-content-center">
+                        <div class="d-flex justify-content-center">
+                            <img src="https://avatars.githubusercontent.com/u/55865619?v=4"
+                                class="header-avatar-img img-fluid">
+                        </div>
+                        <h1 class="h1 text-center">Bruno Pereira</h1>
+                    </div>
+                </div>
+                <div class="container-section-info">
+                    <section class="section-info text-center">
+                        <p class="">Formado em An&aacute;lise e Desenvolvimento de Sistemas e cursando ingl&ecirc;s pela
+                            escola
+                            <a href="https://www.bloomingidiomas.com.br/" target="_blank" class="no-style-link">Blooming
+                                <i class="fas fa-external-link-alt"></i>
+                            </a><br>
+                            Atualmente estou atuando como Desenvolvedor Full Stack na empresa
+                            <a href="https://brudam.com.br/" target="_blank"
+                                class="no-style-link current-company-name">Brudam
+                                <i class="fas fa-external-link-alt"></i>
+                            </a><br>
+                            Desenvolvo funcionalidades e aplico corre&ccedil;&otilde;es diariamente no TMS desenvolvido
+                            pela Empresa,
+                            utilizando no dia a dia tecnologias como PHP, Eloquent, Phalcon, MySQL, Javascript, Jquery,
+                            HTML5 e CSS3.<br>
+                            Tenho conhecimento em tecnologias como Javascript, PHP, Jquery, MySQL, HTML5, CSS3, React,
+                            Github.<br>
+                            Possuo conhecimento em ingl&ecirc;s nivel intermediario.
+                        </p>
+                    </section>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -91,8 +146,9 @@
                         <h4>Cargo: Software Developer</h4>
                         <p>Data de entrada: 25/11/2020</p>
                         <p class="experiencia-p-desc">
-                            Desenvolvo funcionalidades e aplico corre&ccedil;&otilde;es no TMS desenvolvido pela Brudam. 
-                            Utilizando no dia a dia tecnologias como PHP, Eloquent, Phalcon, MySQL, Javascript, Jquery, HTML5 e CSS3.
+                            Desenvolvo funcionalidades e aplico corre&ccedil;&otilde;es no TMS desenvolvido pela Brudam.
+                            Utilizando no dia a dia tecnologias como PHP, Eloquent, Phalcon, MySQL, Javascript, Jquery,
+                            HTML5 e CSS3.
                         </p>
                     </div class="under">
                     <div class="show">
@@ -105,7 +161,8 @@
                             base
                             de dados de catálogo de itens,
                             Pesquisa de informa&ccedil;&otilde;es técnicas de registros na internet e em banco de dados,
-                            Coleta de evidências relacionadas às pesquisas, Confronto entre os padr&otilde;es descritivos e as
+                            Coleta de evidências relacionadas às pesquisas, Confronto entre os padr&otilde;es
+                            descritivos e as
                             informa&ccedil;&otilde;es pesquisadas,
                             Apontamento textual de inconformidades encontradas,
                             Registro das informa&ccedil;&otilde;es encontradas em planilhas e documentos específicos.
@@ -115,7 +172,8 @@
                         <h3>Grupo Dimed</h3>
                         <h4>Cargo: Jovem Aprendiz</h4>
                         <p>Data de entrada: 13/03/2017 & Data de saida: 26/03/2018</p>
-                        <p class="experiencia-p-desc">Durante esse periodo tive as seguintes atribui&ccedil;&otilde;es: Recebimento e
+                        <p class="experiencia-p-desc">Durante esse periodo tive as seguintes atribui&ccedil;&otilde;es:
+                            Recebimento e
                             triagem dos produtos,
                             armazenagem dos produtos em seu devido local,
                             Ressuprimento dos produtos em caixas bin, expedi&ccedil;&atilde;o dos produtos.
@@ -172,7 +230,7 @@
     </script>
     <script src="js/carousel.js"></script>
     <script src="js/utils.js"></script>
-    <script src="js/hideMenu.js"></script>
+    <!-- <script src="js/hideMenu.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 
