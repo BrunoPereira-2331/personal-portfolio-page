@@ -6,5 +6,5 @@
         btnNext: '.experiencias-btn-right'
     })
 
-    hideMenu()
+    // hideMenu()
 })()
